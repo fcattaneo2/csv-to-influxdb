@@ -82,7 +82,7 @@ Esempio :
 
  python /home/pi/python/csv-to-influxdb-unixtime.py --dbname emoncms --input /home/pi/data/feed.csv --timeformat unix --metricname Meteo --fieldcolumns pm10, pm25, temp_esterna  
  
- Considering the csv file the field pm10,pm25,temp_esterna will be upload to influxdb with metri name Meteo:
+ Considering the csv file the field pm10,pm25,temp_esterna will be upload to influxdb with metric name 'Meteo':
 ```
 timestamp,value,computer,pm10,pm25,temp_esterna
 1587835925,51.37,0,35,21,18.9
