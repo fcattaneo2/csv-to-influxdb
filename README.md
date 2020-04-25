@@ -1,27 +1,3 @@
-# csv-to-influxdb-unixtime
-Simple python script that inserts data points read from a csv file ( with timestamp in unix format , in second ) into a influxdb database.
-
-
-Il file csv-to-influx-unixtime accetta come timestamp il formato unix_time in secondi.
-
-Esempio :
-
- python /home/pi/python/csv-to-influxdb-unixtime.py --dbname emoncms --input /home/pi/data/feed.csv --timeformat unix --metricname Meteo --fieldcolumns pm10, pm25, temp_esterna  
- 
- Considering the csv file the field pm10,pm25,temp_esterna will be upload to influxdb with metric name 'Meteo':
-```
-timestamp,value,computer,pm10,pm25,temp_esterna
-1587835925,51.37,0,35,21,18.9
-
-
-
-
-
-
-
-
-
-
 # csv-to-influxdb
 Simple python script that inserts data points read from a csv file into a influxdb database.
 
@@ -94,5 +70,36 @@ timestamp,value,computer
 The following command will insert the file into a influxdb database:
 
 ```python csv-to-influxdb.py --dbname test --input data.csv --tagcolumns computer --fieldcolumns value```
+
+
+
+
+
+
+
+
+
+
+
+
+
+# csv-to-influxdb-unixtime
+Simple python script that inserts data points read from a csv file ( with timestamp in unix format , in second ) into a influxdb database.
+
+
+Il file csv-to-influx-unixtime accetta come timestamp il formato unix_time in secondi.
+
+Esempio :
+
+ python /home/pi/python/csv-to-influxdb-unixtime.py --dbname emoncms --input /home/pi/data/feed.csv --timeformat unix --metricname Meteo --fieldcolumns pm10, pm25, temp_esterna  
+ 
+ Considering the csv file the field pm10,pm25,temp_esterna will be upload to influxdb with metric name 'Meteo':
+```
+timestamp,value,computer,pm10,pm25,temp_esterna
+1587835925,51.37,0,35,21,18.9
+
+
+
+
 
 
