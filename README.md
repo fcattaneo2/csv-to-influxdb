@@ -1,4 +1,4 @@
--influxdb-unixtime
+# csv-to-influxdb-unixtime
 Simple python script that inserts data points read from a csv file ( with timestamp in unix format , in second ) into a influxdb database.
 
 
@@ -12,6 +12,11 @@ Esempio :
 ```
 timestamp,value,computer,pm10,pm25,temp_esterna
 1587835925,51.37,0,35,21,18.9
+
+
+
+
+
 
 
 
