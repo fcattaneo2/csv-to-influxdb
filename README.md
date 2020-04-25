@@ -72,7 +72,11 @@ The following command will insert the file into a influxdb database:
 ```python csv-to-influxdb.py --dbname test --input data.csv --tagcolumns computer --fieldcolumns value```
 
 
-Il fine csv-to-influx-unixtime accetta come timestamp il formato unix_time in secondi.
+# csv-to-influxdb-unixtime
+Simple python script that inserts data points read from a csv file ( with timestamp in unix format , in second ) into a influxdb database.
+
+
+Il file csv-to-influx-unixtime accetta come timestamp il formato unix_time in secondi.
 
 Esempio :
 
